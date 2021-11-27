@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+header {
+  background-color: darkslategray;
+  padding: 10px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content .brand {
+  font-size: 32px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul#user_info {
+  display: none;
+  align-items: center;
+}
+
+nav ul#user_info li{
+  position: relative;
+  margin: 0 7px;
+}
+
+nav ul#user_info li i {
+   font-size: 20px;
+   color: #fff;
+   cursor: pointer;
+}
+nav ul#user_info li .badge{
+  position: absolute;
+  background-color: #f00;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  top: -10;
+  right: -9;
+  display: block;
+  font-size: 10px;
+  text-align: center;
+  display: none;
+}
+
+.item-qty
+{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: #000;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+
+}
+
+nav ul#user_info li .carts-products{
+  position: absolute;
+  width: 200px;
+  transform: translate(-42% , 0);
+  background-color: #eaeaea;
+  top: 46px;
+  padding: 10px;
+  border: 1px solid green;
+  display: none;
+  
+}
+nav ul#user_info li .carts-products a{
+  background-color: darkgreen;
+  display: block;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 6px;
+  text-decoration: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  min-width: 50px;
+  margin: 0 5px;
+  padding: 5px;
+}
+
+/* form */
+
+.section-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  background: #bc6ff1;
+  padding: 20px;
+}
+
+.section-form h2 {
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #52057b;
+}
+
+.section-form form input {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  font-family: 'Oswald', sans-serif;
+  outline: none;
+}
+
+.section-form form input[type=submit] {
+  font-size: 25px;
+  cursor: pointer;
+  height: auto;
+
+}
+
+.section-form form input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+/*search*/
+
+#search {
+  width: 100%;
+  height: 40px;
+  display: block;
+  margin: 10px 0;
+  padding: 5px;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*products*/
+
+.products {
+  width: 60%;
+  margin: 10px 0;
+  float: left;
+
+}
+
+.products-filter {
+  float: right;
+  width: 35%;
+  margin: 10px 0;
+
+
+}
+
+#size-filter
+{
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+.product-item{
+  display: flex;
+  width: 100%;
+  border:1px solid #ddd;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
+.product-item .product-item-desc
+{
+  margin-left: 15px;
+}
+
+.product-item-img {
+  width: 25%;
+  margin-right: 10px;
+  
+}
+.product-item-desc a{
+  display:block;
+  font-size:25px;
+  color:#333;
+  cursor: pointer;
+}
+.product-item-actions{
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-item-actions .add-to-cart{
+  display: block;
+  margin-left: auto;
+  background-color: darkgreen;
+  color: #fff;
+  border: 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.product-item-actions .favorite{
+  cursor: pointer;
+  display: block;
+  width: 20px;
+  margin-left: auto;
+}
+
+.item-details img{
+  width:80%;
+  height: 400px;
+  border:2px solid #333;
+  margin: 10px 100px 10px 100px;
+  
+}
+.edit-product{
+  display: block;
+  width: 100px;
+  border: none;
+  background: darkgreen;
+  color: #fff;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+/**************** create product ***********/
+
+.create-product-icon {
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background-color:darkslategray;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  text-align: center;
+
+  
+}
+
+.create-product-icon:hover{
+  opacity: 0.8;
+}
+
+.user-avatar
+{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+
+#edit-profile-form input {
+  width: 100%;
+  display: block;
+  margin: 10px 0;
+  height: 40px;
+}
+
+#edit-profile-form input[type=submit]{
+  cursor: pointer;
+  background: #333;
+  color: #fff;
+}
+
+#en_lang , #ar_lang {
+  color: #fff;
+  cursor: pointer;
+}
+

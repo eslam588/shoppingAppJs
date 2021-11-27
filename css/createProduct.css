@@ -1,0 +1,28 @@
+
+
+.create-product-page form {
+      margin-top: 50px;
+}
+
+.create-product-page form input ,
+.create-product-page form select
+ {
+    width: 80%;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #797575;
+    font-size: 18px;
+    outline: none;
+    display: block;
+    margin: 15px auto;
+ }
+
+ .create-product-page form input[type=submit]
+ {
+     background-color: darkslategray;
+     color: #fff;
+     border: 0;
+     cursor: pointer;
+
+ }
